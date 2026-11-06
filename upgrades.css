@@ -1,0 +1,131 @@
+@charset "UTF-8";
+/*TOGGLE MENU*/
+#menu-toggle{
+    font-size: 1.5em;
+    background: none;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: white;
+}
+.upgradeDrawer {
+    position: fixed;
+    top: 0;
+    left: -500px;
+    width: 350px;
+    height: 100vh;
+    background-color: white;
+    border-left: 3px solid black;
+    box-shadow: -5px 0px 15px rgba(0,0,0,0.2);
+    transition: left 0.3s ease-in-out;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+.upgradeDrawer > h2{
+    text-align: center;
+}
+.upgradeDrawer.open {
+    left: 0;
+}
+/*Exit to menu*/
+.closebutton{
+    font-size: 1.2em;
+    background: none;
+    border: none;
+    cursor: pointer;
+    float: right;
+    font-weight: bold;
+}
+/*Button to exit*/
+.exit{
+    width: 30px;
+    height: 30px;
+}
+.exit:hover{
+    background-color: rgba(202, 202, 202, 0.475);
+    border-radius: 10%;
+}
+/*Resources inside to menu*/
+.resources > p{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    font-size: 1em;
+}
+/*Resources below to upgrade*/
+.containerR{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.rs1{
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+#money{
+    margin-top: -12px;
+    padding: 20px;
+}
+.rs2{
+    margin-right: 30px;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+#click{
+    margin-top: -12px;
+    padding: 20px;
+}
+/*UPGRADES BELOW TO RESOURCES*/
+.containerUpgrades{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.case{
+    margin-top: 10px;
+    margin-left: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100px;
+    height: 85px;
+}
+.case > p{
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 2px;
+}
+.case > .valuePurchase{
+    margin-top: 10px;
+    font-weight: bold;
+}
+.case > button{
+    display: flex;
+    justify-self: center;
+    padding: 4px;
+    border-radius: 30px;
+    border: 1px solid black;
+    font-size: 0.7em;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.case > button:active{
+    background-color: rgb(191, 11, 11);
+}
+.case:hover{
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+}
+.case.hidden{
+    display: none;
+}

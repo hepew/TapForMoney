@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TapForMoney</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="upgrades.css">
     <link rel="shortcut icon" href="images/iconMoney.png" type="image/x-icon">
 </head>
 <body>
@@ -27,16 +28,52 @@
         <div id="balance">TAP FOR MONEY</div>
     </div>
 
-    <!-- upgrade menu!-->
-     <div id="upgrade-menu" class="upgrade-drawer">
+            <!--upgrade menu-->
+     <div id="upgradeMenu" class="upgradeDrawer">
+            <!--EXIT to menu-->
         <button class="closebutton" onclick="toggleMenu()"><img src="images/exit.png" class="exit" alt=""></button>
+            <!--Principal content-->
         <h2>UPGRADES</h2>
-        <div class="resources">
-            <div id="money">0</div> <!--BALANCE-->
-            <div id="click">0</div> <!--COUNTER-->
+        
+        
+        <div class="containerUpgrades">
+            <div class="case">
+                <p>TAP -> $0.20</p>
+                <p class="valuePurchase">$3.00</p>
+                <button id="money1"
+                class="butcase">PURCHASE</button>
+            </div>
+            
+            <div class="case hidden" id="up2">
+                <p>TAP -> $0.50</p>
+                <p class="valuePurchase">$30.00</p>
+                <button id="money2"
+                class="butcase">PURCHASE</button>
+            </div>
         </div>
-     </div>
+    </div>
 
     <script src="script.js" defer></script>
+    <script src="upgrade.js" defer></script>
 </body>
 </html>
+
+<!--<div class="case" id="up1">
+                <p>Click -> 2x</p>
+                <p class="valuePurchase">60</p>
+                <button id="click1" onclick="purchaseClick()"class="butcase">PURCHASE</button>
+                <div class="resources">
+            <p>RESOURCES</p>
+            <div class="containerR">
+                <div class="rs1">
+                    <p>money</p>
+                    <div id="money">0</div> 
+                </div>
+                
+                <div class="rs2">
+                    <p>click</p>
+                    <div id="click">0</div>
+                </div>
+            </div>
+        </div>
+        <hr> -->

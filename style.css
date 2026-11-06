@@ -6,12 +6,14 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(235, 209, 176);  
+    background-color: rgb(235, 209, 176);
+ 
 }
 .container1{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    
 }
 #upgrades{
     margin-top: 30px;
@@ -67,8 +69,8 @@ body{
     box-shadow: 4px 5px 5px black;
     border: 3px solid black;
 }
-#button:hover{
-    background-color: rgb(203, 2, 2);
+#button:active{
+    background-color: rgb(191, 11, 11);
 }
 
 /*BALANCE BELOW*/
@@ -81,63 +83,4 @@ body{
     font-size: 20px;
     text-align: center;
 }
-/*ia*/
-#menu-toggle{
-    font-size: 1.5em;
-    background: none;
-    border: 2px solid black;
-    border-radius: 8px;
-    padding: 5px 10px;
-    cursor: pointer;
-    background-color: white;
-}
-.upgrade-drawer {
-    position: fixed;
-    top: 0;
-    left: -500px; /* Escondido fora da tela */
-    width: 350px;
-    height: 100vh;
-    background-color: white;
-    border-left: 3px solid black;
-    box-shadow: -5px 0px 15px rgba(0,0,0,0.2);
-    transition: left 0.3s ease-in-out; /* Animação suave */
-    padding: 20px;
-    box-sizing: border-box;
-    z-index: 1000;
-}
-.upgrade-drawer > h2{
-    text-align: center;
-}
-.upgrade-drawer.open {
-    left: 0;
-}
 
-/* Botão de fechar dentro do menu */
-.closebutton{
-    font-size: 1.2em;
-    background: none;
-    border: none;
-    cursor: pointer;
-    float: right;
-    font-weight: bold;
-}
-
-.exit{
-    width: 30px;
-    height: 30px;
-}
-.exit:hover{
-    background-color: rgba(202, 202, 202, 0.475);
-    border-radius: 10%;
-}
-.resources{
-    display: flex;
-    justify-content: space-between;
-    margin: 10px;
-}
-#money{
-    padding: 20px;
-}
-#click{
-    padding: 20px;
-}
