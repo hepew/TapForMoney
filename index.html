@@ -1,25 +1,42 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="style.css">
-<link rel="shortcut icon" href="iconMoney.png" type="image/x-icon">
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tap for Money</title>
+    <title>TapForMoney</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/iconMoney.png" type="image/x-icon">
 </head>
 <body>
-    <div class="container">
-        <!-- Counter-->
+    <div class="container1">
+            <!--UPGRADES-->
+         <button onclick="toggleMenu()" id="upgrades">UPGRADES</button>
+
+            <!-- Counter-->
          <div class="circle">
              <div id="counter">0</div>
          </div>
-        <link rel="stylesheet" href="">
-         <!--Button for tap-->
-        <button onclick="tap()" id="button">TAP</button>
-        
-        <!--Your balance-->
-    <div id="balance">TAP FOR MONEY</div>
     </div>
+     
+    <div class="container2">
+             <!--Button for tap-->
+        <div class="taptobutton">
+            <button onclick="" id="button">TAP</button>
+        </div>
+                <!--Your balance-->
+        <div id="balance">TAP FOR MONEY</div>
+    </div>
+
+    <!-- upgrade menu!-->
+     <div id="upgrade-menu" class="upgrade-drawer">
+        <button class="closebutton" onclick="toggleMenu()"><img src="images/exit.png" class="exit" alt=""></button>
+        <h2>UPGRADES</h2>
+        <div class="resources">
+            <div id="money">0</div> <!--BALANCE-->
+            <div id="click">0</div> <!--COUNTER-->
+        </div>
+     </div>
+
     <script src="script.js" defer></script>
 </body>
 </html>

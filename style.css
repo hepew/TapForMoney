@@ -6,52 +6,138 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(235, 209, 176);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 90vh;
+    background-color: rgb(235, 209, 176);  
 }
-.container{
-    justify-content: center;
-    align-items: center;
+.container1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#upgrades{
+    margin-top: 30px;
+    margin-left: 40px;
+    padding: 14px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 50px;
+    cursor: pointer;
+}
+#upgrades:hover{
+    background-color: rgb(234, 234, 234);
+}
+/*CIRCLE COUNTER*/
+#counter{
+    font-size: 1.4em;
+    text-align: center;
 }
 .circle{
+    margin-top: 30px;
+    margin-right: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-self: center;
-    margin-bottom: 20px;
-    background-color: white;
+    justify-self: end;
+    background-color: rgb(255, 255, 255);
     border: 2px solid black;
     border-radius: 50%;
     width: 45px;
     height: 45px;
-}  
-#counter{
-    font-size: 1.4em;
-    text-align: center;
+} 
+.container2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*RED BUTTON*/
+.taptobutton{
+    margin-top: 120px;
 }
 #button{
     font-size: 2em;
     margin: 10px;
     height: 150px;
     width: 150px;
-    border-radius: 50%;
-    border: none;
     text-align: center;
+    cursor: pointer;
     background-color: rgb(255, 0, 0);
     color: white;
     font-weight: bold;
+    border-radius: 50%;
     box-shadow: 4px 5px 5px black;
-    cursor: pointer;
     border: 3px solid black;
 }
 #button:hover{
     background-color: rgb(203, 2, 2);
 }
+
+/*BALANCE BELOW*/
 #balance{
-    padding-top: 10px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 50px;
+    margin-top: 150px;
+    padding: 10px;
     font-size: 20px;
     text-align: center;
+}
+/*ia*/
+#menu-toggle{
+    font-size: 1.5em;
+    background: none;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: white;
+}
+.upgrade-drawer {
+    position: fixed;
+    top: 0;
+    left: -500px; /* Escondido fora da tela */
+    width: 350px;
+    height: 100vh;
+    background-color: white;
+    border-left: 3px solid black;
+    box-shadow: -5px 0px 15px rgba(0,0,0,0.2);
+    transition: left 0.3s ease-in-out; /* Animação suave */
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+.upgrade-drawer > h2{
+    text-align: center;
+}
+.upgrade-drawer.open {
+    left: 0;
+}
+
+/* Botão de fechar dentro do menu */
+.closebutton{
+    font-size: 1.2em;
+    background: none;
+    border: none;
+    cursor: pointer;
+    float: right;
+    font-weight: bold;
+}
+
+.exit{
+    width: 30px;
+    height: 30px;
+}
+.exit:hover{
+    background-color: rgba(202, 202, 202, 0.475);
+    border-radius: 10%;
+}
+.resources{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+#money{
+    padding: 20px;
+}
+#click{
+    padding: 20px;
 }
